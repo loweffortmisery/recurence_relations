@@ -1,7 +1,7 @@
 def f_a(x, k):
     x_k = x
     for i in range(1,k+1):
-        x_k = (x^2)/((2*k)*(2*k+1)) * x_k
+        x_k *= (x^2)/((2*k)*(2*k+1))
     return x_k
 
 def f_b(x, k):
