@@ -1,4 +1,4 @@
-def f_a(n):
+def f_a(n = -1):
     a_n = 1
     S_n = 1
     i = 1
@@ -9,7 +9,7 @@ def f_a(n):
         S_n += a_n * i
         yield S_n, i
 
-def f_b(n):
+def f_b(n = -1):
     # return 1 - 1/n
     S_n = 1/2
     i = 2
@@ -19,7 +19,7 @@ def f_b(n):
         S_n += 1/((i-1)*i)
         yield S_n, i
 
-def f_c(n):
+def f_c(n = -1):
     a_n = 1
     S_n = 1/2
     i = 2
