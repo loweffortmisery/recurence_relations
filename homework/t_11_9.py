@@ -27,3 +27,17 @@ def f_c(n = -1):
         P_n *= (i+1)/(i+2)
         yield P_n, i
 
+
+
+if __name__ == '__main__':
+    print("(a):")
+    for P, i in f_a(10):
+        print(P,i)
+    print("\n\n(b):")
+    for P, i in f_b(10):
+        print(P,i)
+    print("\n\n(c):")
+    for P, i in f_c(10):
+        print(P,i)
+
+

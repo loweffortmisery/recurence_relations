@@ -30,7 +30,7 @@ def f_c(x, k = -1):
         for j in range(i**2 - i + 1, i**2 + i + 1):
             b_k *= j
         x_k = a_k / b_k
-        yield x_l, i
+        yield x_k, i
 
 def f_d(x, k = -1):
     a_k = 1
@@ -47,5 +47,19 @@ def f_d(x, k = -1):
  
 
 
+
+if __name__ == '__main__':
+    print("(a):")
+    for x, i in f_a(3,10):
+        print(x,i)
+    print("\n\n(b):")
+    for x, i in f_b(3,10):
+        print(x,i)
+    print("\n\n(c):")
+    for x, i in f_c(3,10):
+        print(x,i)
+    print("\n\n(d):")
+    for x, i in f_d(3,10):
+        print(x,i)
 
 
